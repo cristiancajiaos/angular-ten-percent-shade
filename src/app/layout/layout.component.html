@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Nombre o código RGB" [(ngModel)]="colorInput"/>
+    </div>
+
+    <div class="box" [ngStyle]="{'background-color':colorInput}">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-group">
+      <input type="text" class="form-control" readonly />
+    </div>
+    <div class="box" [ngStyle]="{'background-color':'darken($color: ' + colorInput + ', $amount: 10)'}">
+    </div>
+  </div>
+</div>

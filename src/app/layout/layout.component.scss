@@ -1,0 +1,8 @@
+.box {
+  height: 150px;
+  border: 1px solid #ccc;
+}
+
+.darker {
+  background-color: darken($color: red, $amount: 10);
+}
